@@ -30,13 +30,15 @@ body {
 
 #hero #img-overlay {
   position: absolute;
-  /* border: 2px white solid; */
+  border: 2px purple solid;
   width: 100%;
   height: 100%;
 }
 
 #hero-image {
   width: 100%;
+  /* need all carousel img same height */
+  height: 900px;
 }
 
 #hero nav {
@@ -78,10 +80,17 @@ body {
 
 #carousel-content {
   padding-left: 123px;
+  /* border: 2px red solid; */
+  /* 
+    causes strange scrolling behavior
+    on carousel interaction if height not set
+    maybe has something to do with container 
+    size changing?
+  */
+  height: 250px; 
 }
 
 #carousel-content h1 {
-  /* border: 2px red solid; */
   font-size: 55px;
   font-weight: 400;
   width: 1000px;
@@ -111,12 +120,27 @@ main {
   row-gap: 182px;
   width: 100%;
   margin-top: 56px;
+  margin-bottom: 100px;
+}
+
+main aside {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .main-section {
   border: 2px green solid;
   min-width: 500px;
   max-width: 1200px;
+}
+
+.main-section h2 {
+  font-size: 40px;
+}
+
+.main-section p {
+  font-size: 25px;
 }
 
 #intro {
@@ -136,9 +160,7 @@ main {
 }
 
 #intro aside {
-  font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-top: 20px;
 }
 
@@ -168,14 +190,59 @@ main {
 
 #services h2 {
   font-weight: 600;
-  font-size: 40px;
+  /* font-size: 40px; */
   margin-bottom: 30px;
 }
 
 #services img {
-  width: 500px;
+  max-width: 500px;
 }
 
-#services p {
-  font-size: 25px;
+#case-studies {
+  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
 }
+
+#case-studies p:nth-child(2) {
+  margin-top: 50px;
+}
+
+#case-studies p {
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+}
+
+#case-study-slide {
+  display: flex;
+  flex-direction: row;
+  column-gap: 138px;
+}
+
+#careers {
+  position: relative;
+  color: white;
+}
+
+#careers h2 {
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 46px;
+}
+
+#careers a {
+  font-size: 20px;
+  color: white;
+}
+
+#careers img {
+  width: 100%;
+}
+
+#career-img-overlay {
+  position: absolute;
+  top: 50%;  
+  transform: translateY(-50%); 
+  padding-left: 121px;
+}
+
