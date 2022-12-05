@@ -111,7 +111,6 @@ main {
   row-gap: 182px;
   width: 100%;
   margin-top: 56px;
-
 }
 
 .main-section {
@@ -153,4 +152,30 @@ main {
 #intro-content div {
   display: column;
   row-gap: 30px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  row-gap: 75px;
+}
+
+#services section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+#services h2 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#services img {
+  width: 500px;
+}
+
+#services p {
+  font-size: 25px;
 }
