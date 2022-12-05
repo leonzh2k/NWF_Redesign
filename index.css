@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 button {
   background: none;
   border: none;
@@ -38,12 +42,12 @@ body {
 #hero-image {
   width: 100%;
   /* need all carousel img same height */
-  height: 900px;
+  height: 90rem;
 }
 
 #hero nav {
-  padding-left: 127px;
-  padding-right: 122px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 28px;
   display: flex;
   flex-direction: row;
@@ -52,6 +56,7 @@ body {
 }
 
 #hero h2 {
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -62,9 +67,9 @@ body {
 }
 
 #hero nav ul li {
-  font-size: 20px;
-  margin-left: 8px;
-  margin-right: 8px;
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #carousel {
@@ -79,7 +84,7 @@ body {
 }
 
 #carousel-content {
-  padding-left: 123px;
+  padding-left: 10%;
   /* border: 2px red solid; */
   /* 
     causes strange scrolling behavior
@@ -87,13 +92,14 @@ body {
     maybe has something to do with container 
     size changing?
   */
-  height: 250px; 
+  height: 25rem; 
+  width: 100%;
 }
 
 #carousel-content h1 {
-  font-size: 55px;
+  font-size: 5.5rem;
   font-weight: 400;
-  width: 1000px;
+  width: 100%;
   margin-bottom: 49px;
 }
 

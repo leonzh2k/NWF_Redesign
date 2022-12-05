@@ -1,8 +1,5 @@
 (() => {
   'use strict';
-  // const carouselController = {
-    
-  // }
   const carousel = {
     init() {
       const model = { 
@@ -107,6 +104,7 @@
             slideControl.appendChild(slide);
           }
           this.slideHeader = document.querySelector("#case-studies h2");
+          this.render();
         },
         render() {
           this.slideButtons.forEach(button => {

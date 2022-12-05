@@ -4,3 +4,4 @@
 * good alt description for carousel arrows
 * choose bolder montserrat font
 * postfix "js" to selectors used in js
+* make cursor pointer on buttons
