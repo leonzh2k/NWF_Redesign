@@ -199,9 +199,10 @@ main aside {
 }
 
 #case-studies {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #case-studies p:nth-child(2) {
@@ -217,6 +218,21 @@ main aside {
   display: flex;
   flex-direction: row;
   column-gap: 138px;
+}
+
+#slide-control {
+  margin-top: 20px;
+}
+
+.slide-button {
+  /* Ellipse 2 */
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #careers {

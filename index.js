@@ -73,6 +73,71 @@
       controller.init();
     }
   }
+
+  const caseStudy = {
+    init() {
+      const model = { 
+        index: 0,
+        items: [
+          {
+            header: "Case Study Slide 1",
+          },
+          {
+            header: "Case Study Slide 2",
+          },
+          {
+            header: "Case Study Slide 3",
+          }
+        ]
+      };
+
+      const view = {
+        init() {
+          const slideControl = document.querySelector("#slide-control");
+          const slides = controller.getData();
+          // dynamically create slides
+          this.slideButtons = [];
+          for (let i = 0; i < slides.length; i++) {
+            const slide = document.createElement("button");
+            slide.classList.add("slide-button");
+            this.slideButtons.push(slide);
+            slide.addEventListener("click", () => {
+              controller.setSlideIndex(i);
+            })
+            slideControl.appendChild(slide);
+          }
+          this.slideHeader = document.querySelector("#case-studies h2");
+        },
+        render() {
+          this.slideButtons.forEach(button => {
+            button.style.background = "white";
+          });
+          const index = controller.getIndex();
+          const data = controller.getData();
+          this.slideHeader.textContent = data[index].header;
+          this.slideButtons[index].style.background = "black";
+        }
+      }
+
+      const controller = {
+        init() {
+          view.init();
+        },
+        setSlideIndex(index) {
+          model.index = index;
+          view.render();
+        },
+        getIndex() {
+          return model.index;
+        },
+        getData() {
+          return model.items;
+        }
+      }
+      controller.init();
+    }
+  }
   
   carousel.init();
+  caseStudy.init();
 })();
