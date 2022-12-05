@@ -1,7 +1,101 @@
-* {
-    box-sizing: border-box;
+* { 
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat';
+  font-family: 'Montserrat';
+  /* border: 2px red solid; */
+  min-height: 100vh;
+}
+
+#hero {
+  position: relative;
+  /* border: 2px red solid; */
+  color: white;
+  width: 100%;
+}
+
+#hero #img-overlay {
+  position: absolute;
+  /* border: 2px white solid; */
+  width: 100%;
+  height: 100%;
+}
+
+#hero-image {
+  width: 100%;
+}
+
+#hero nav {
+  padding-left: 127px;
+  padding-right: 122px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero h2 {
+  font-weight: bolder;
+}
+
+#hero nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#hero nav ul li {
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#carousel {
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 2px yellow solid; */
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-content {
+  padding-left: 123px;
+}
+
+#carousel-content h1 {
+  /* border: 2px red solid; */
+  font-size: 55px;
+  font-weight: 400;
+  width: 1000px;
+  margin-bottom: 49px;
+}
+
+#carousel-content a {
+  font-size: 20px;
+  color: white;
+  text-underline-offset: 10px;
+}
+
+#carousel-controls {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
