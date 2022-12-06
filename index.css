@@ -150,6 +150,10 @@ main aside {
   font-weight: 900;
 }
 
+main a {
+  color: black;
+}
+
 .main-section {
   /* border: 2px green solid; */
   min-width: 500px;
