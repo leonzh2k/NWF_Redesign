@@ -43,6 +43,8 @@ body {
   width: 100%;
   /* need all carousel img same height */
   height: 90rem;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 #hero nav {
@@ -155,18 +157,22 @@ main aside {
   align-items: center;
 }
 
+#intro img {
+  width: 60%;
+  max-width: 633px;
+}
+
 #intro h2 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 #intro p {
   font-family: 'Inter';
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 #intro aside {
-  /* font-size: 20px; */
   margin-top: 20px;
 }
 
@@ -186,12 +192,16 @@ main aside {
   display: flex;
   flex-direction: column;
   row-gap: 75px;
+  width: 100%;
 }
 
 #services section {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   column-gap: 20px;
+  border: 2px white solid;
 }
 
 #services h2 {
@@ -201,7 +211,8 @@ main aside {
 }
 
 #services img {
-  max-width: 500px;
+  width: 60%;
+  max-width: 633px;
 }
 
 #case-studies {
@@ -209,6 +220,11 @@ main aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#case-studies img {
+  width: 60%;
+  max-width: 633px;
 }
 
 #case-studies p:nth-child(2) {
@@ -223,7 +239,9 @@ main aside {
 #case-study-slide {
   display: flex;
   flex-direction: row;
-  column-gap: 138px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10%;
 }
 
 #slide-control {
