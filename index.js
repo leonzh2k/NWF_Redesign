@@ -8,12 +8,14 @@
           {
             imgSrc: "./assets/carousel01.png",
             headline: "Leveraging innovation for the campaigns of tomorrow",
-            aside: "Contact Us"
+            aside: "Contact Us",
+            link: "https://nwfstrategies.com/contact/"
           },
           {
             imgSrc: "./assets/carousel02.png",
             headline: "Careers",
-            aside: "Apply Now"
+            aside: "Apply Now",
+            link: "https://nwfstrategies.com/careers/"
           }
         ]
       };
@@ -37,9 +39,9 @@
         render() {
           const index = controller.getIndex();
           const data = controller.getData();
-          // console.log(data[index]);
           this.carouselHeadline.textContent = data[index].headline;
           this.carouselAside.textContent = data[index].aside;
+          this.carouselAside.href = data[index].link;
           this.carouselImg.src = data[index].imgSrc;
         }
       }
