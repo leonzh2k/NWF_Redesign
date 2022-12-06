@@ -35,7 +35,7 @@ body {
 
 #hero #img-overlay {
   position: absolute;
-  border: 2px purple solid;
+  /* border: 2px purple solid; */
   width: 100%;
   height: 100%;
 }
@@ -49,6 +49,7 @@ body {
 }
 
 #hero nav {
+  z-index: 1;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 28px;
@@ -75,9 +76,16 @@ body {
   margin-right: 0.5rem;
 }
 
+#hero nav a {
+  color: white;
+  text-decoration: none;
+}
+
 #carousel {
-  top: 0;
-  position: absolute;
+  position: relative;
+  z-index: 0;
+  /* top: 0; */
+  /* position: absolute; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,6 +95,7 @@ body {
 }
 
 #carousel-content {
+  z-index: 1;
   padding-left: 10%;
   /* border: 2px red solid; */
   /* 
@@ -95,8 +104,11 @@ body {
     maybe has something to do with container 
     size changing?
   */
+  display: flex;
+  align-items: center;
   height: 25rem; 
   width: 100%;
+  padding-bottom: 200px;
 }
 
 #carousel-content h1 {
@@ -111,18 +123,18 @@ body {
   color: white;
 }
 
-#carousel-controls {
+#carousel-prev-js {
   position: absolute;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+  left: 15px;
+}
+
+#carousel-next-js {
+  position: absolute;
+  right: 15px;
 }
 
 main {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +151,7 @@ main aside {
 }
 
 .main-section {
-  border: 2px green solid;
+  /* border: 2px green solid; */
   min-width: 500px;
   max-width: 1200px;
 }
@@ -202,7 +214,7 @@ main aside {
   justify-content: space-around;
   align-items: center;
   column-gap: 20px;
-  border: 2px white solid;
+  /* border: 2px white solid; */
 }
 
 #services h2 {
